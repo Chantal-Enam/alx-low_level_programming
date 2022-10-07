@@ -41,7 +41,7 @@ char *mul(char n, char *num, int num_index, char *dest, int dest_index)
 	int j, k, mul, mulrem, add, addrem;
 
 	mulrem = addrem = 0;
-for (j = num_index, k = dest_index; j >= 0; j--, k--)
+ for (j = num_index, k = dest_index; j >= 0; j--, k--)
 	{
 		mul = (n - '0') * (num[j] - '0') + mulrem;
 		mulrem = mul / 10;
@@ -105,7 +105,7 @@ void init(char *str, int l)
  *
  * Return: zero, or exit status of 98 if failure
  */
-       int main(int argc, char *argv[])
+ int main(int argc, char *argv[])
 {
 	int l1, l2, ln, ti, i;
 	char *a;
@@ -113,7 +113,7 @@ void init(char *str, int l)
 	char e[] = "Error\n";
 
 	if (argc != 3 || check_for_digits(argv))
-	{
+{
 		for (ti = 0; e[ti]; ti++)
 			_putchar(e[ti]);
 		exit(98);
@@ -126,7 +126,7 @@ void init(char *str, int l)
 	a = malloc(ln * sizeof(char));
 	if (a == NULL)
 	{
-		for (ti = 0; e[ti]; ti++)
+	for (ti = 0; e[ti]; ti++)
 	_putchar(e[ti]);
 		exit(98);
 	}
