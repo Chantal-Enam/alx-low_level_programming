@@ -19,7 +19,7 @@ void _print(char *str, int l)
 			j = 1;
 		if (j || i == l - 1)
 			_putchar(str[i]);
-		i++;
+ 		i++;
 	}
 
 	_putchar('\n');
@@ -105,7 +105,7 @@ void init(char *str, int l)
  *
  * Return: zero, or exit status of 98 if failure
  */
-int main(int argc, char *argv[])
+       int main(int argc, char *argv[])
 {
 	int l1, l2, ln, ti, i;
 	char *a;
