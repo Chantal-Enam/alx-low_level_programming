@@ -8,7 +8,7 @@
  *
  * Return: void
  */
-void print_c(va_list c)
+void print_c(va_list c
 {
 	printf("%c", va_arg(c, int));
 }
@@ -84,7 +84,7 @@ char *separator = "";
 				separator = ", ";
 				break;
 			}
-			j++;
+                        j++;
 		}
 		i++;
 	}
